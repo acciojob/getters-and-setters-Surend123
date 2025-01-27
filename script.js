@@ -15,12 +15,20 @@ class Person {
 }
 
 class Student extends Person {
+	Student(name,age){
+		super.name = name;
+		super.age = age;
+	}
 	function study(){
 		console.log(super.name," is studing");
 	}
 }
 
 class Teacher extends Person {
+	Teacher(name,age){
+		super.name = name;
+		super.age = age;
+	}
 	function teach(){
 		console.log(super.name," is teaching");
 	}
