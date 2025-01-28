@@ -2,7 +2,7 @@
 class Person {
 	let name;
 	let age;
-	Person(name,age){
+	constructor(name,age){
 		this.name = name;
 		this.age = age;
 	}
@@ -15,22 +15,22 @@ class Person {
 }
 
 class Student extends Person {
-	Student(name,age){
-		super.name = name;
-		super.age = age;
+	constructor(name,age){
+		super(name,age);
 	}
 	function study(){
-		console.log(super.name," is studing");
+		// console.log(super.name," is studing");
+		return this.name+" is studing";
 	}
 }
 
 class Teacher extends Person {
-	Teacher(name,age){
-		super.name = name;
-		super.age = age;
+	constructor(name,age){
+		super(name,age);
 	}
 	function teach(){
-		console.log(super.name," is teaching");
+		// console.log(super.name," is teaching");
+		return this.name+" is teaching";
 	}
 }
 
